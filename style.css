@@ -1,3 +1,73 @@
-h1 {
-  color: red;
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--Dark, #272044);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/brandenburgertor.jpg);
+  background-size: cover;
+  background-repeat: none;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+header h1 {
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  margin: 30px 0;
+}
+header h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+header h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 3px;
+  color: var(--Dark, #272044);
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--Light, #fff);
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  header a {
+    padding: 8px 15px;
+  }
 }
