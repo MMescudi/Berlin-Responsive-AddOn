@@ -12,17 +12,78 @@ body {
   display: grid;
   grid-gap: 64px;
 }
-.grid-3-columns {
+.grid-3-columns-with-first-narro {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
+.card {
+  background-color: white;
+  color: var(--Dark, #272044);
+  margin: 30px 0;
 }
+.card-header {
+  max-height: 300px;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 30px 30px;
+}
+.card h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.card p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 5px;
+}
+.card h5 {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.button {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb2;
+  text-decoration: none;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+section.secondary {
+  background-color: #f8f8f8;
+}
+
+.text-center {
+  text-align: center;
+}
+
 main {
   background-color: white;
 }
@@ -54,6 +115,7 @@ main p {
 }
 img {
   max-width: 100%;
+  display: block;
 }
 
 header {
